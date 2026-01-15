@@ -1,6 +1,22 @@
 @import "tailwindcss";
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+}
+@theme {
+  --color-Neutral-900:#141D2F;
+  --color-Neutral-800:#1E2A47;
+  --color-Neutral-700:#2B3442;
+  --color-Neutral-500:#4B6A9B;
+  --color-Neutral-300:#697C9A;
+  --color-Neutral-200:#90A4D4;
+  --color-Neutral-100:#F6F8FF;
+  --color-Neutral-0:#FFF;
+  --color-Blue-300:#60ABFF;
+  --color-Blue-500:#0079FF;
+  --color-Red:#F74646;
+ --font-space: "Space Mono", monospace;
 
-:root {
+
   
 
   font-synthesis: none;
