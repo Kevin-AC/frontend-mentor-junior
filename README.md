@@ -16,17 +16,17 @@ Retos de complejidad media que incluyen:
 ### 1. Weather App
 **Tecnologías:** React, Vite, OpenWeather API, Tailwind CSS  
 **Descripción:** Aplicación del clima con búsqueda de ciudades y datos en tiempo real  
-📂 [Código](./weather-app) | 🌐 [Demo en vivo](#)
+📂 [Código](https://github.com/Kevin-AC/Weather-App) | 🌐 [Demo en vivo](https://weather-ac.netlify.app/)
 
 ### 2. Tip Calculator
 **Tecnologías:** JavaScript, HTML, CSS  
 **Descripción:** Calculadora de propinas con división de cuenta  
-📂 [Código](./tip-calculator) | 🌐 [Demo en vivo](#)
+📂 [Código](https://github.com/Kevin-AC/TipCalculator-Challenge) | 🌐 [Demo en vivo](https://tip-calculator-d.netlify.app/)
 
 ### 3. Advice Generator
 **Tecnologías:** HTML, CSS, JavaScript, Advice Slip API  
 **Descripción:** Generador de consejos aleatorios consumiendo API  
-📂 [Código](./advice-generator) | 🌐 [Demo en vivo](#)
+📂 [Código](https://github.com/Kevin-AC/AdviceGenerator-Challenge) | 🌐 [Demo en vivo](https://advice-generator-k.netlify.app/)
 
 ---
 
