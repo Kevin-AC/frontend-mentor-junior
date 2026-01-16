@@ -9,6 +9,9 @@
   .stat-label{
     @apply text-[13px]/[1.5]  text-Neutral-0  
   }
+  .linkSection{
+    @apply flex items-center gap-4
+  }
 }
 @theme {
   --color-Neutral-900:#141D2F;
