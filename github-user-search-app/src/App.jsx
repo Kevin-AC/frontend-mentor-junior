@@ -1,14 +1,13 @@
-
+import Header from "./components/Header"
 
 function App() {
 
   return (
-    <>
-        <h1 className="text-3xl font-bold underline text-blue-500">
-          Hola Tailwind!
-        </h1>
-        
-    </>
+    <main className="bg-Neutral-900 w-full h-screen py-8 px-4  ">
+      <div className="w-auto h-auto ">
+        <Header/>
+      </div>
+    </main>
   )
 }
 
