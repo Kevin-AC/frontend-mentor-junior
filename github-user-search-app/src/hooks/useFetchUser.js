@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { userMock } from "userMock.js"
+import { userMock } from "../mocks/userMock.js"
 
 const API_URL = "https://api.github.com/users/";
 const USE_MOCK=true;
@@ -65,7 +65,9 @@ export const useFetchUser=()=>{
         } finally {
         setLoading(false);
     }
-
+        
     }
+    console.log("🔍 useFetchUser states:", { user, error, loading });
     return {user,error,loading,getUser}
+    
 }
