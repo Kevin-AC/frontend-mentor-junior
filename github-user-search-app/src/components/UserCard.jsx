@@ -14,14 +14,14 @@ export default function UserCard({user}){
         <article className="w-full h-155 py-8 px-6 bg-Neutral-800 rounded-2xl space-y-8 ">
             
             <header className="flex gap-6 items-center">
-                <img className="w-17.5 h-17.5" src="/assets/User profile.svg" alt="User profile" />
+                <img className="w-17.5 h-17.5 rounded-full" src={user.avatar} alt="User profile" />
                 <div className="text-Neutral-0 space-y-1">
                     <h1 className="text-[26px] font-bold">{user.name}</h1>
                     <p className="text-Blue-300">@{user.username}</p>
                     <p className="text-[15px]/[1.5]">{user.joined}</p>
                 </div>
             </header>
-            <p className="text-[15px]/[1.5] text-Neutral-0 opacity-70 mb-6 mt-8">This profile has no bio</p>
+            <p className="text-[15px]/[1.5] text-Neutral-0 opacity-70 mb-6 mt-8">{user.bio}</p>
             <section className="bg-Neutral-900 h-57.25 p-4 rounded-[10px] opacity-100 ">
                 <dl className=" space-y-3">
                     <div className="space-y-2">
