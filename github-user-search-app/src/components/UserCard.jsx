@@ -11,7 +11,7 @@ export default function UserCard({user}){
         )
     }
     return(
-        <article className="w-full h-155 py-8 px-6 bg-Neutral-800 rounded-2xl space-y-8 ">
+        <article className="w-full h-auto py-8 px-6 bg-Neutral-800 rounded-2xl space-y-8 ">
             
             <header className="flex gap-6 items-center">
                 <img className="w-17.5 h-17.5 rounded-full" src={user.avatar} alt="User profile" />
