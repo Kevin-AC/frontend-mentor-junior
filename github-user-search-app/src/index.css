@@ -13,6 +13,7 @@
     @apply flex items-center gap-4
   }
 }
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --color-Neutral-900:#141D2F;
   --color-Neutral-800:#1E2A47;
