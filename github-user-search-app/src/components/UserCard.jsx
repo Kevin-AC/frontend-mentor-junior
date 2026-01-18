@@ -1,10 +1,18 @@
 
-export default function UserCard({user,loading,error}){
-    if (loading) return <p>Cargando...</p>;
-    if (error) return <p>Error: {error}</p>;
-    if (!user) return <p>No se encontró usuario</p>;
+export default function UserCard({user}){
+
+    if (!user) {
+        return(
+            <div className="w-full h-155 py-8 px-6 bg-Neutral-800 rounded-2xl text-center space-y-4 ">
+                <h2 className="text-Neutral-0 font-bold text-2xl">No results found!</h2>
+                <p className="text-Neutral-200 text-[15px]">We couldn’t find any GitHub users matching your search. Please double-check the username and try again.</p>
+            </div>
+    
+        )
+    }
     return(
         <article className="w-full h-155 py-8 px-6 bg-Neutral-800 rounded-2xl space-y-8 ">
+            
             <header className="flex gap-6 items-center">
                 <img className="w-17.5 h-17.5" src="/assets/User profile.svg" alt="User profile" />
                 <div className="text-Neutral-0 space-y-1">

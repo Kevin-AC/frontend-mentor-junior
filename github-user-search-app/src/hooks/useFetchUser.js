@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { userMock } from "../mocks/userMock.js"
+//import { userMock } from "../mocks/userMock.js"
 
 const API_URL = "https://api.github.com/users/";
 const USE_MOCK=true;
@@ -10,14 +10,18 @@ export const useFetchUser=()=>{
     const [loading,setLoading]= useState(false);
 
     const getUser=async(userName)=>{
+        if (!userName) { 
+            setUser(null) 
+            return;
+        } 
         setLoading(true);
         setError(null);
-        if(USE_MOCK){
-            await new Promise (resolve=>setTimeout(resolve,800));
-            setUser(userMock);
-            setLoading(false);
-            return;
-        }
+        // if(USE_MOCK){
+        //     await new Promise (resolve=>setTimeout(resolve,800));
+        //     setUser(userMock);
+        //     setLoading(false);
+        //     return;
+        // }
         try{
             const response = await fetch(`${API_URL}${userName}`)
             if(!response.ok) throw new Error("No results")
