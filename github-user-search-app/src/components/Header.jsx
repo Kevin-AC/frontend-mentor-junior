@@ -10,7 +10,8 @@ export default function Header(){
     },[darkMode])
     return (
         <section className="flex justify-between items-center">
-            <img src="public/assets/devfinder-light.svg" alt="devfinder-logo" />
+            <img className="hidden dark:block" src="public/assets/devfinder-light.svg" alt="devfinder-light-logo" />
+            <img className="dark:hidden" src="public/assets/devfinder.svg" alt="devfinder-logo" />
             <button className="flex gap-4 text-Neutral-200 font-bold tracking-[2.5px] cursor-pointer"
                 onClick={() => setDarkMode(!darkMode)}
             >

@@ -4,10 +4,10 @@
 }
 @layer components{
   .stat-number{
-    @apply text-[22px]/[1.4] font-bold text-Neutral-0  
+    @apply text-[22px]/[1.4] font-bold dark:text-Neutral-0 text-Neutral-700  
   }
   .stat-label{
-    @apply text-[13px]/[1.5]  text-Neutral-0  
+    @apply text-[13px]/[1.5]  dark:text-Neutral-0 text-Neutral-500  
   }
   .linkSection{
     @apply flex items-center gap-4
