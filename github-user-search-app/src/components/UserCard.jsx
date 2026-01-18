@@ -39,7 +39,7 @@ export default function UserCard({user}){
                     </div>
                 </dl>
             </section>
-            <section className="text-[15px]  ">
+            <section className="text-[15px] space-y-2  ">
                 <ul className="space-y-2">
                     <li className="linkSection">
                         <svg className="w-5 h-5 text-Neutral-0" fill="currentColor">
