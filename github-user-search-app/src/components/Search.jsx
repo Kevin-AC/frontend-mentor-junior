@@ -10,7 +10,7 @@ export default function Search({getUser}){
         getUser(searchUser)
     }
     return(
-       <section className="flex items-center relative">
+       <section className="flex items-center relative max-w-182.5">
             <img className="absolute pl-3 "
                 src="/assets/icon-search.svg" 
                 alt="icon-search" />
