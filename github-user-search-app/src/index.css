@@ -31,4 +31,10 @@
   --color-Red:#F74646;
   --font-space: "Space Mono", monospace;
 }
+body {
+  background-color: #F6F8FF; /* color light mode */
+}
 
+body.dark {
+  background-color: #141D2F; /* color dark mode */
+}
