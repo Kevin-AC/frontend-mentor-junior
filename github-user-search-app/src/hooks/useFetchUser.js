@@ -19,27 +19,24 @@ export const useFetchUser=()=>{
         twitter: "Not Available",
         company: "@github"
     })
-    const [error,setError]=useState(null);
+    const [error,setError]=useState(false);
     const [loading,setLoading]= useState(false);
 
     const getUser=async(userName)=>{
-        if (!userName) { 
-            setUser(null) 
-            return;
-        } 
+        if (!userName?.trim()) return  
+        setError(false);
         setLoading(true);
-        setError(null);
-        // if(USE_MOCK){
-        //     await new Promise (resolve=>setTimeout(resolve,800));
-        //     setUser(userMock);
-        //     setLoading(false);
-        //     return;
-        // }
+        const minLoadingTime = new Promise(resolve => setTimeout(resolve, 2000))
         try{
-            const response = await fetch(`${API_URL}${userName}`)
-            if(!response.ok) throw new Error("No results")
-            const data = await response.json();
-            
+            const [data] = await Promise.all([
+                fetch(`${API_URL}${userName}`).then(async (response) => {
+                    if (!response.ok) throw new Error("No results")
+                    return response.json()
+                }),
+                minLoadingTime
+            ])
+
+
             const formattedDate=(isoDate)=>{
                 const fecha = new Date(isoDate);
                 const opciones = { day: 'numeric', month: 'short', year: 'numeric' };
@@ -75,16 +72,18 @@ export const useFetchUser=()=>{
                 company: company || "Not Available",
             }
             setUser(formattedUser);
+            setError(false)
         }catch(e){
-            setError(e.message);
-            setUser(null);
+            
             console.log('Error',e)
+            await minLoadingTime
+            setError(true);
         } finally {
         setLoading(false);
     }
         
     }
-    console.log("🔍 useFetchUser states:", { user, error, loading });
+    //console.log("🔍 useFetchUser states:", { user, error, loading });
     return {user,error,loading,getUser}
     
 }
