@@ -2,10 +2,23 @@ import { useState } from "react";
 //import { userMock } from "../mocks/userMock.js"
 
 const API_URL = "https://api.github.com/users/";
-const USE_MOCK=true;
+const USE_MOCK=false;
 
 export const useFetchUser=()=>{
-    const [user,setUser]=useState(null);
+    const [user, setUser] = useState({
+        avatar: "/assets/User profile.svg",
+        name: "The Octocat",
+        username: "octocat",
+        joined: "Joined 25 Jan 2011",
+        bio: "This profile has no bio",
+        repos: 8,
+        followers: 3938,
+        following: 9,
+        location: "San Francisco",
+        website: "https://github.blog",
+        twitter: "Not Available",
+        company: "@github"
+    })
     const [error,setError]=useState(null);
     const [loading,setLoading]= useState(false);
 

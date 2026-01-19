@@ -3,13 +3,13 @@ import Header from "./components/Header"
 import Search from "./components/Search"
 import UserCard from "./components/UserCard"
 function App() {
-  const { user,getUser } = useFetchUser();
+  const { user,error,getUser } = useFetchUser();
   return (
     <main className="dark:bg-Neutral-900 bg-Neutral-100 opacity-100 w-full h-auto sm:h-screen py-8 px-4 md:py-11 md:px-8 font-space lg:grid lg:place-content-center  ">
       <div className="w-auto h-auto space-y-8 ">
         <Header/>
         <Search getUser={getUser}/>
-        <UserCard user={user}/>
+        <UserCard user={user} error={error}/>
       </div>
     </main>
   )
