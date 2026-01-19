@@ -12,6 +12,9 @@
   .linkSection{
     @apply flex items-center gap-4
   }
+  .Focus{
+    @apply focus:ring-Blue-500 focus:ring-2 focus:ring-offset-2 outline-none  dark:ring-offset-Neutral-900
+  }
 }
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
