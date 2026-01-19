@@ -19,11 +19,11 @@ export default function UserCard({user,error}){
                     alt="User profile"
                 />
                 <div>
-                    <header className="flex top-0 right-0  gap-6 sm:gap-10 absolute sm:relative">
-                        <div className="flex-1 sm:flex sm:flex-col sm:justify-between">
+                    <header className="flex top-0 right-0  gap-6 sm:gap-10 absolute sm:relative  ">
+                        <div className="flex-1 sm:flex sm:flex-col sm:justify-between pl-22 sm:pl-0">
                             <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                                 <div>
-                                    <h1 className="text-[26px] font-bold dark:text-Neutral-0 text-Neutral-700">
+                                    <h1 className="text-[26px] font-bold dark:text-Neutral-0 text-Neutral-700 break-word line-clamp-2">
                                         {user?.name}
                                     </h1>
                                     <p className="dark:text-Blue-300 text-Blue-500">@{user?.username}</p>
@@ -35,7 +35,7 @@ export default function UserCard({user,error}){
                         </div>
                     </header>
 
-                    <p className="mt-8 text-[15px]/[1.5] dark:text-Neutral-0 text-Neutral-500 opacity-70 mb-6">{user?.bio}</p>
+                    <p className="mt-14 sm:mt-8 text-[15px]/[1.5] dark:text-Neutral-0 text-Neutral-500 opacity-70 mb-6">{user?.bio}</p>
                     {/* Stats */}
                     <section className="mt-6 dark:bg-Neutral-900 bg-Neutral-100 rounded-[10px] p-4 sm:px-8 sm:py-4">
                         <dl className="flex flex-col gap-4 sm:flex-row sm:justify-between">
