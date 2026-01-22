@@ -25,7 +25,13 @@
     mix-blend-mode: multiply;    /* Fuerza contraste */
     opacity: 1;
   }
- 
+ .check-list-style{
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    font-size: var(--font-text-preset-5-size);
+    color: var(--color-Neutral-700);    
+ }
 }
 
 @layer utilities {
