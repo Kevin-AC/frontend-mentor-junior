@@ -18,7 +18,14 @@
   .bg-gradient-salmon{
     background-image:linear-gradient(90deg, var(--color-Salmon-100) 0%, var(--color-Salmon-50) 100%);
   }
-  
+ .bg-pattern-hero {
+    background-image: 
+      url('public/images/pattern-light-bg.svg'),
+      linear-gradient(90deg, var(--color-Salmon-100) 0%, var(--color-Salmon-50) 100%);
+    background-blend-mode: overlay;
+    background-size: 200px, cover;
+    background-repeat: repeat, no-repeat;
+  }
 }
 
 @layer utilities {
@@ -28,7 +35,7 @@
   .text-preset-1 {
     font-family: 'Martian Mono', monospace;
     font-weight: 700;  /* Bold */
-    font-size: 3.875rem;  /* 62px DESKTOP */
+    font-size: 3.8rem;  /* 62px DESKTOP */
     line-height: 120%;
     letter-spacing: -0.125rem;  /* -2px */
   }
@@ -146,4 +153,11 @@
     line-height: 120%;
     letter-spacing: -0.0625rem;
   }
+}
+
+.bg-pattern-custom {
+  background-image: url('./assets/pattern.svg');
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity: 0.2;
 }
