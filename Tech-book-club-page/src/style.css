@@ -1,96 +1,149 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme{
+  --color-Neutral-900:#062630;
+  --color-Neutral-700:#385159;
+  --color-Neutral-200:#E6E1DF;
+  --color-Neutral-100:#FAF5F3;
+  --color-Salmon-500:#FEA36F;
+  --color-Salmon-100:#FFE2D1;
+  --color-Salmon-50:#FFF5EF;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer utilities {
+  .bg-gradient-primary {
+    background-image: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
   }
-  a:hover {
-    color: #747bff;
+
+  .bg-gradient-salmon{
+    background-image:linear-gradient(90deg, var(--color-Salmon-100) 0%, var(--color-Salmon-50) 100%);
   }
-  button {
-    background-color: #f9f9f9;
+  
+}
+
+@layer utilities {
+  /* ========================================
+     TEXT PRESET 1
+  ======================================== */
+  .text-preset-1 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;  /* Bold */
+    font-size: 3.875rem;  /* 62px DESKTOP */
+    line-height: 120%;
+    letter-spacing: -0.125rem;  /* -2px */
+  }
+  
+  .text-preset-1-mobile {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;
+    font-size: 2.375rem;  /* 38px MOBILE */
+    line-height: 120%;
+    letter-spacing: -0.125rem;
+  }
+  
+  /* ========================================
+     TEXT PRESET 2
+  ======================================== */
+  .text-preset-2 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;  /* SemiBold */
+    font-size: 3.125rem;  /* 50px */
+    line-height: 130%;
+    letter-spacing: -0.125rem;
+  }
+  
+  .text-preset-2-mobile {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;
+    font-size: 2.125rem;  /* 34px */
+    line-height: 130%;
+    letter-spacing: -0.125rem;
+  }
+  
+  /* ========================================
+     TEXT PRESET 3
+  ======================================== */
+  .text-preset-3 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;
+    font-size: 2.125rem;  /* 34px */
+    line-height: 130%;
+    letter-spacing: -0.0625rem;  /* -1px */
+  }
+  
+  .text-preset-3-mobile {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;
+    font-size: 1.5rem;    /* 24px */
+    line-height: 110%;
+    letter-spacing: -0.0625rem;
+  }
+  
+  /* ========================================
+     TEXT PRESET 4
+  ======================================== */
+  .text-preset-4 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;  /* SemiBold 24px */
+    font-size: 1.5rem;
+    line-height: 110%;
+    letter-spacing: -0.0625rem;
+  }
+  
+  .text-preset-4-regular {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 400;  /* Regular 24px */
+    font-size: 1.5rem;
+    line-height: 110%;
+    letter-spacing: -0.0625rem;
+  }
+  
+  /* ========================================
+     TEXT PRESET 5
+  ======================================== */
+  .text-preset-5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;  /* Regular 20px */
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.03125rem;  /* -0.5px */
+  }
+  
+  .text-preset-5-semibold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;  /* SemiBold 20px */
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.03125rem;
+  }
+  
+  /* ========================================
+     TEXT PRESET 6
+  ======================================== */
+  .text-preset-6 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;
+    font-size: 1.125rem;  /* 18px */
+    line-height: 130%;
+    letter-spacing: -0.0625rem;
+  }
+  
+  .text-preset-6-mobile {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;
+    font-size: 1rem;      /* 16px */
+    line-height: 130%;
+    letter-spacing: -0.0625rem;
+  }
+  
+  /* ========================================
+     TEXT PRESET 7
+  ======================================== */
+  .text-preset-7 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 400;  /* Regular */
+    font-size: 0.875rem;  /* 14px */
+    line-height: 120%;
+    letter-spacing: -0.0625rem;
   }
 }
