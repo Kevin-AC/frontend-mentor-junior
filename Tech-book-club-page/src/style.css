@@ -26,11 +26,23 @@
     opacity: 1;
   }
  .check-list-style{
+    
     display: flex;
     align-items: center;
     gap: 0.875rem;
     font-size: var(--font-text-preset-5-size);
     color: var(--color-Neutral-700);    
+ }
+ .tech-list-number{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-Neutral-900);
+  border-radius: 4px;
+  border:2px solid var(--color-Neutral-900)
+  
  }
 }
 
