@@ -5,6 +5,7 @@
   --color-Neutral-700:#385159;
   --color-Neutral-200:#E6E1DF;
   --color-Neutral-100:#FAF5F3;
+  --color-Neutral-0:#fff;
   --color-Salmon-500:#FEA36F;
   --color-Salmon-100:#FFE2D1;
   --color-Salmon-50:#FFF5EF;
@@ -20,6 +21,13 @@
   }
    .pattern {
     background-image: url('/images/pattern-light-bg.svg');
+    background-repeat: repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;    /* Fuerza contraste */
+    opacity: 1;
+  }
+  .pattern-dark{
+    background-image: url('/images/pattern-dark-bg.svg');
     background-repeat: repeat;
     background-size: cover;
     mix-blend-mode: multiply;    /* Fuerza contraste */
