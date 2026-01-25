@@ -11,6 +11,7 @@
   --color-Salmon-50:#FFF5EF;
 
 }
+
 @layer utilities {
   .bg-gradient-primary {
     background-image: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
@@ -54,43 +55,40 @@
  }
 }
 
+
 @layer utilities {
   /* ========================================
      TEXT PRESET 1
   ======================================== */
-  .text-preset-1 {
-    font-family: 'Martian Mono', monospace;
-    font-weight: 700;  /* Bold */
-    font-size: 3.8rem;  /* 62px DESKTOP */
-    line-height: 120%;
-    letter-spacing: -0.125rem;  /* -2px */
-  }
-  
-  .text-preset-1-mobile {
-    font-family: 'Martian Mono', monospace;
-    font-weight: 700;
-    font-size: 2.375rem;  /* 38px MOBILE */
-    line-height: 120%;
-    letter-spacing: -0.125rem;
-  }
+  .text-preset-1{
+      font-family: 'Martian Mono', monospace;
+      font-weight: 700;
+      font-size: 2.375rem;  /* 38px MOBILE */
+      line-height: 120%;
+      letter-spacing: -0.125rem;
+    }
+
+  @media (width >= 40rem){
+    .text-preset-1{
+       font-size: 3.825rem;
+    }
+    
+  }  
   
   /* ========================================
      TEXT PRESET 2
-  ======================================== */
+  ======================================== */  
   .text-preset-2 {
-    font-family: 'Martian Mono', monospace;
-    font-weight: 600;  /* SemiBold */
-    font-size: 3.125rem;  /* 50px */
-    line-height: 130%;
-    letter-spacing: -0.125rem;
-  }
-  
-  .text-preset-2-mobile {
     font-family: 'Martian Mono', monospace;
     font-weight: 600;
     font-size: 2.125rem;  /* 34px */
     line-height: 130%;
     letter-spacing: -0.125rem;
+  }
+  @media (width >= 40rem) {
+    .text-preset-2{
+      font-size:3.125rem;
+    }
   }
   
   /* ========================================
@@ -99,17 +97,15 @@
   .text-preset-3 {
     font-family: 'Martian Mono', monospace;
     font-weight: 600;
-    font-size: 2.125rem;  /* 34px */
-    line-height: 130%;
-    letter-spacing: -0.0625rem;  /* -1px */
-  }
-  
-  .text-preset-3-mobile {
-    font-family: 'Martian Mono', monospace;
-    font-weight: 600;
     font-size: 1.5rem;    /* 24px */
     line-height: 110%;
     letter-spacing: -0.0625rem;
+  }
+  @media (width >= 40rem) {
+    .text-preset-3{
+      font-size: 2.125rem;
+    }
+    
   }
   
   /* ========================================
@@ -156,17 +152,14 @@
   .text-preset-6 {
     font-family: 'Martian Mono', monospace;
     font-weight: 600;
-    font-size: 1.125rem;  /* 18px */
-    line-height: 130%;
-    letter-spacing: -0.0625rem;
-  }
-  
-  .text-preset-6-mobile {
-    font-family: 'Martian Mono', monospace;
-    font-weight: 600;
     font-size: 1rem;      /* 16px */
     line-height: 130%;
     letter-spacing: -0.0625rem;
+  }
+  @media (width >= 40rem) {
+    .text-preset-6{
+      font-size: 1.125rem;
+    }
   }
   
   /* ========================================

@@ -8,13 +8,13 @@
     <title>tech-book-club-page</title>
   </head>
   <body class="space-y-16">
-    <header class=" py-6 px-4 space-y-12 pattern bg-Neutral-100" id="Header">
+    <header class=" py-6 px-4 sm:p-8 space-y-12 pattern  bg-Neutral-100" id="Header">
       <img src="/images/logo.svg" alt="">
-      <div class="grid lg:grid-cols-2 space-y-16 ">
+      <div class="grid lg:grid-cols-2 space-y-16">
          <section class="space-y-6">
-        <h1 class="text-preset-1-mobile bg-gradient-primary bg-clip-text text-transparent">Join the ultimate tech book club</h1>
+        <h1 class=" text-preset-1 bg-gradient-primary bg-clip-text text-transparent sm:pr-44">Join the ultimate tech book club</h1>
         <p class="text-preset-5 opacity-100 text-Neutral-700">Turn your reading time into learning time with fellow tech enthusiasts. Get curated recommendations, join vibrant discussions, and level up your skills one chapter at a time.</p>
-        <button class="w-full h-16 py-5 relative text-Neutral-900 text-preset-6-mobile rounded-xl bg-Salmon-50 border-Neutral-900 border-2">
+        <button class="w-full sm:w-95 h-16 py-5 relative text-Neutral-900 text-preset-6 rounded-xl bg-Salmon-50 border-Neutral-900 border-2">
           REVIEW MEMBERSHIP OPTIONS
           <img class="absolute right-4 top-4.5" src="/images/icon-arrow-down.svg" alt="icon-arrow-down">
         
@@ -33,13 +33,15 @@
           </div>
         </div>
       </section>
-      <img class="rounded-xl" src="/images/image-hero-mobile.webp" alt="">
+        <img class="hidden lg:block w-full  rounded-3xl" src="/images/image-hero-desktop.webp" alt="image-hero-desktop">
+        <img class="hidden sm:block lg:hidden w-full  rounded-2xl" src="/images/image-hero-tablet.webp" alt="image-hero-tablet">
+        <img class="w-full max-w-sm sm:hidden rounded-xl" src="/images/image-hero-mobile.webp" alt="image-hero-mobile">
       </div>
     </header>
-    <main class="space-y-16 py-6 px-4">
+    <main class="space-y-16 py-6 sm:px-8 px-4">
       <section class="space-y-16" id="read together">
           <div>
-            <h2 class="text-preset-2-mobile pb-6 text-Neutral-900">Read together,
+            <h2 class="text-preset-2 pb-6 pr-4 text-Neutral-900">Read together,
               grow together</h2>
             <ul class="space-y-6" role="list">
               <li class="check-list-style">
@@ -68,13 +70,16 @@
               </li>
             </ul>
           </div>
-        <img class="rounded-xl" src="/images/image-read-together-mobile.webp" alt="image-read-together-mobile">
+        <img class="hidden lg:block w-full  rounded-3xl" src="/images/image-read-together-desktop.webp" alt="image-hero-desktop">
+        <img class="hidden sm:block lg:hidden w-full maxw  rounded-2xl" src="/images/image-read-together-tablet.webp" alt="image-hero-tablet">
+        <img class="w-full max-w-sm sm:hidden rounded-xl" src="/images/image-read-together-mobile.webp" alt="image-hero-mobile">
+      
       </section>
       <section class="space-y-12" id="average book">
         <div>
          <div class="relative">
-            <h2 class="text-preset-2-mobile pb-6 pr-14 text-Neutral-900">Not your average book club</h2>
-            <img class="absolute top-20.5 -left-2 w-26 h-12" src="/images/pattern-circle.png" alt="pattern-circle">
+            <h2 class="text-preset-2 pb-6 pr-14 text-Neutral-900">Not your average book club</h2>
+            <img class="absolute top-20.5 sm:top-16 -left-2 sm:left-40 w-26 sm:w-36 h-12 sm:h-16" src="/images/pattern-circle.png" alt="pattern-circle">
           </div>
           <p class="text-preset-5 text-Neutral-700 ">Connect with a community that speaks your language - from <span class="text-preset-5-semibold ">Python</span> to
             <span class="text-preset-5-semibold ">TypeScript</span> and everything in between. Our
@@ -83,82 +88,87 @@
         <img  class="rounded-xl" src="/images/image-not-average-mobile.webp" alt="">
       </section>
       <section class="pattern relative overflow-hidden bg-Neutral-100 rounded-xl space-y-8 py-16 px-4" id="tech reading">
-        <h2 class="text-preset-2-mobile text-Neutral-900 pr-22">Your tech reading journey</h2>
+        <h2 class="text-preset-2 text-Neutral-900 pr-22">Your tech reading journey</h2>
         <ul class="space-y-8 pr-8 relative z-20">
           <li class="space-y-4">
-            <span class="tech-list-number text-preset-6-mobile">1</span>
-            <h3 class="text-preset-6-mobile text-Neutral-900">Choose your membership tier</h3>
+            <span class="tech-list-number text-preset-6">1</span>
+            <h3 class="text-preset-6 text-Neutral-900">Choose your membership tier</h3>
           </li>
           <li class="space-y-4">
-            <span class="tech-list-number text-preset-6-mobile">2</span>
-            <h3 class="text-preset-6-mobile text-Neutral-900">Get your monthly book selection</h3>
+            <span class="tech-list-number text-preset-6">2</span>
+            <h3 class="text-preset-6 text-Neutral-900">Get your monthly book selection</h3>
           </li>
           <li  class="space-y-4">
-            <span class="tech-list-number text-preset-6-mobile">3</span>
-            <h3 class="text-preset-6-mobile text-Neutral-900">Join our discussion forums</h3>
+            <span class="tech-list-number text-preset-6">3</span>
+            <h3 class="text-preset-6 text-Neutral-900">Join our discussion forums</h3>
           </li>
           <li  class="space-y-4">
-            <span class="tech-list-number text-preset-6-mobile">4</span>
-            <h3 class="text-preset-6-mobile text-Neutral-900">Attend exclusive meetups</h3>
+            <span class="tech-list-number text-preset-6">4</span>
+            <h3 class="text-preset-6 text-Neutral-900">Attend exclusive meetups</h3>
           </li>
         </ul>
         <div class="absolute z-0 -bottom-64 size-171 bg-[url('/images/pattern-glow.svg')] 
            bg-no-repeat bg-top-right bg-size-[100%]"></div>
       </section>
-      <section class="space-y-6" id="Membership options">
-        <h2 class="text-preset-2-mobile text-Neutral-900 pr-12 pb-6">Membership options</h2>
-        <article class="h-89 p-6 border border-Neutral-200 rounded-lg text-Neutral-900 space-y-6" id="Starter">
-          <h2 class="text-preset-4 ">Starter</h2>
-          <p class="text-preset-3 border-b border-Neutral-200 pb-6 flex items-center gap-2">$19<span class="text-preset-5 text-Neutral-700 ">/month</span></p>
-          <ul class="space-y-5 text-preset-5 text-Neutral-700">
-            <li class="flex items-center gap-4">
-              <img src="/images/icon-check.svg" alt="icon-check">
-              <span>1 book/month</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <img src="/images/icon-check.svg" alt="icon-check">
-              <span>Online forums</span>
-            </li>
-          </ul>
-          <button class="w-full h-15.25 rounded-lg border-2 border-Neutral-900 bg-Salmon-50 text-preset-6-mobile">SUBSCRIBE NOW</button>
-        </article>
-        <article class="h-89 p-6 relative bg-Neutral-100 overflow-hidden border border-Neutral-200 rounded-lg text-Neutral-900 space-y-6" id="Pro">
-          <div class="space-y-6 relative z-20">
-            <h2 class="text-preset-4 ">Pro</h2>
-            <p class="text-preset-3 border-b border-Neutral-200 pb-6 flex items-center gap-2">$29<span
+      <section class="space-y-6 w-full flex flex-col" id="Membership options">
+        <h2 class="text-preset-2 text-Neutral-900 sm:p-0 pb-6">Membership options</h2>
+        <div class="flex justify-center sm:justify-normal   gap-4 sm:gap-6 flex-wrap lg:gap-1.5">
+          <article class="w-85 lg:w-71.5 h-89 p-6 border border-Neutral-200 rounded-lg text-Neutral-900 space-y-6" id="Starter">
+            <h2 class="text-preset-4 ">Starter</h2>
+            <p class="text-preset-3 border-b border-Neutral-200 pb-6 flex items-center gap-2">$19<span
                 class="text-preset-5 text-Neutral-700 ">/month</span></p>
-            <ul class="space-y-5  text-preset-5 text-Neutral-700">
+            <ul class="space-y-5 text-preset-5 text-Neutral-700">
               <li class="flex items-center gap-4">
                 <img src="/images/icon-check.svg" alt="icon-check">
-                <span>2 books/month</span>
+                <span>1 book/month</span>
               </li>
               <li class="flex items-center gap-4">
                 <img src="/images/icon-check.svg" alt="icon-check">
-                <span>Virtual meetups</span>
+                <span>Online forums</span>
               </li>
             </ul>
-            <button class="w-full h-15.25 rounded-lg border-2 border-Neutral-900 bg-Salmon-50 text-preset-6-mobile">SUBSCRIBE
-              NOW</button>
-          </div>
-          <div class="absolute z-0 -bottom-72 size-171 bg-[url('/images/pattern-glow.svg')] 
-                     bg-no-repeat bg-top-right bg-size-[100%]"></div>
-        </article>
-        <article class="h-89 p-6 border border-Neutral-200 rounded-lg text-Neutral-900 space-y-6" id="Enterprise">
-          <h2 class="text-preset-4 ">Enterprise</h2>
-          <p class="text-preset-3 border-b border-Neutral-200 pb-6">Custom</p>
-          <ul class="space-y-5 text-preset-5 text-Neutral-700">
-            <li class="flex items-center gap-4">
-              <img src="/images/icon-check.svg" alt="icon-check">
-              <span>Team access</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <img src="/images/icon-check.svg" alt="icon-check">
-              <span>Private sessions</span>
-            </li>
-          </ul>
-          <button class="w-full h-15.25 rounded-lg border-2 border-Neutral-900 bg-Salmon-50 text-preset-6-mobile">TALK TO US</button>
-        </article>
+            <button class="w-full h-15.25 rounded-lg border-2 border-Neutral-900 bg-Salmon-50 text-preset-6">SUBSCRIBE NOW</button>
+          </article>
+          <article class="w-85 lg:w-87.5 h-89 lg:h-97.5 p-6 relative bg-Neutral-100 overflow-hidden border border-Neutral-200 rounded-lg text-Neutral-900 space-y-6"
+            id="Pro">
+            <div class="space-y-6 relative z-20">
+              <h2 class="text-preset-4 ">Pro</h2>
+              <p class="text-preset-3 border-b border-Neutral-200 pb-6 flex items-center gap-2">$29<span
+                  class="text-preset-5 text-Neutral-700 ">/month</span></p>
+              <ul class="space-y-5  text-preset-5 text-Neutral-700">
+                <li class="flex items-center gap-4">
+                  <img src="/images/icon-check.svg" alt="icon-check">
+                  <span>2 books/month</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <img src="/images/icon-check.svg" alt="icon-check">
+                  <span>Virtual meetups</span>
+                </li>
+              </ul>
+              <button class="w-full h-15.25 rounded-lg border-2 border-Neutral-900 bg-Salmon-50 text-preset-6">SUBSCRIBE
+                NOW</button>
+            </div>
+            <div class="absolute z-0 -bottom-72 size-171 bg-[url('/images/pattern-glow.svg')] 
+                               bg-no-repeat bg-top-right bg-size-[100%]"></div>
+          </article>
+          <article class="w-85 lg:w-71.5 h-89 p-6 border border-Neutral-200 rounded-lg text-Neutral-900 space-y-6" id="Enterprise">
+            <h2 class="text-preset-4 ">Enterprise</h2>
+            <p class="text-preset-3 border-b border-Neutral-200 pb-6">Custom</p>
+            <ul class="space-y-5 text-preset-5 text-Neutral-700">
+              <li class="flex items-center gap-4">
+                <img src="/images/icon-check.svg" alt="icon-check">
+                <span>Team access</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <img src="/images/icon-check.svg" alt="icon-check">
+                <span>Private sessions</span>
+              </li>
+            </ul>
+            <button class="w-full h-15.25 rounded-lg border-2 border-Neutral-900 bg-Salmon-50 text-preset-6">TALK TO US</button>
+          </article>
+        </div>
       </section>
+
       <section class="px-4 space-y-8" id="Testimonials">
         <div>
           <div class="flex">
@@ -169,15 +179,15 @@
             <img src="/images/icon-star.svg" alt="icon-star">
           </div>
         </div>
-        <h2 class="text-preset-3-mobile text-Neutral-900">"This book club transformed my technical reading from a solitary activity into an enriching community experience. The
+        <h2 class="text-preset-3 text-Neutral-900">"This book club transformed my technical reading from a solitary activity into an enriching community experience. The
         discussions are gold!"</h2>
         <p class="text-preset-5 text-Neutral-700">Sarah Chen, Software Architect</p>
       </section>
     </main>
-    <footer class="h-auto bg-Neutral-900 pattern-dark px-4 pt-12 pb-4 rounded-2xl rounded-b-none space-y-12">
-      <h2 class="text-preset-2-mobile text-Neutral-100 text-center px-4">Ready to debug your reading list?</h2>
+    <footer class="h-auto flex flex-col items-center bg-Neutral-900 pattern-dark px-4 pt-12 pb-4 rounded-2xl rounded-b-none space-y-12">
+      <h2 class="text-preset-2 text-Neutral-100 text-center px-4">Ready to debug your reading list?</h2>
       <button
-        class="w-full h-16 py-5 relative text-Neutral-0 text-preset-6-mobile rounded-xl border-Neutral-0 border-2">
+        class="w-full sm:w-95 h-16 py-5 relative text-Neutral-0 text-preset-6 rounded-xl border-Neutral-0 border-2">
         REVIEW MEMBERSHIP OPTIONS
         <img class="absolute right-4 top-4.5" src="/images/icon-arrow-up.svg" alt="icon-arrow-up">     
       </button>
@@ -195,15 +205,18 @@
         </div>
       </div>
       <section class="w-full text-Neutral-0 text-preset-7 ">
-        <div class="w-full border-t border-Neutral-700 flex flex-col items-center gap-3 py-6 px-8">
+        <div class="w-full border-t border-Neutral-700 flex flex-col sm:flex-row items-center sm:justify-between gap-3 py-6 ">
           <p class="">© 2024 – Tech Book Club</p>
           <div class="flex items-center gap-4">
             <img src="/images/logo-bluesky.svg" alt="logo-bluesky">
             <img src="/images/logo-linkedin.svg" alt="logo-linkedin">
           </div>
-          <p>Coded by</p>
-          <a class="font-extrabold hover:text-Salmon-500" href="https://www.frontendmentor.io/profile/Kevin-AC">Kevin Argumedo</a>
+          <div class="text-center">
+            <p>Coded by</p>
+            <a class="font-extrabold hover:text-Salmon-500" href="https://www.frontendmentor.io/profile/Kevin-AC">Kevin Argumedo</a>
+          </div>
         </div>
+        
       </section>
 
     </footer>
