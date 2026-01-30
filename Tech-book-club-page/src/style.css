@@ -53,6 +53,13 @@
   border:2px solid var(--color-Neutral-900)
   
  }
+ @media (width >=40rem) {
+  .tech-list-li{
+  display: flex;
+  flex-direction: column;
+  grid-area: 24px;
+ }
+ }
 }
 
 
