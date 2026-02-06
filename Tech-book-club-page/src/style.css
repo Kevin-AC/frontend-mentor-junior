@@ -20,6 +20,20 @@
   .bg-gradient-salmon{
     background-image:linear-gradient(90deg, var(--color-Salmon-100) 0%, var(--color-Salmon-50) 100%);
   }
+  @layer utilities {
+  .focus-outer-border {
+    border: 2px solid var(--color-Neutral-0);
+    outline: none;
+
+  }
+  .focus-outer-border:focus{
+    outline: 2px solid  var(--color-Neutral-0);  /* Borde azul grueso */
+    outline-offset: 2px;  
+   
+  }
+  .focus-outer-border:hover{
+     background-image:linear-gradient(90deg, var(--color-Neutral-700) 0%, var(--color-Neutral-900) 100%);
+  }
    .pattern {
     background-image: url('/images/pattern-light-bg.svg');
     background-repeat: repeat;
@@ -60,6 +74,8 @@
   grid-area: 24px;
  }
  }
+
+
 }
 
 
@@ -180,4 +196,4 @@
     letter-spacing: -0.0625rem;
   }
 }
-
+}
