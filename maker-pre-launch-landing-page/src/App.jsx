@@ -1,10 +1,14 @@
 import Header from "./components/Header"
 import MainCard from "./components/MainCard"
+import PlanFree from "./components/PlanFree"
+import PlanPro from "./components/PlanPro"
+import PricingPlans from "./components/PricingPlans"
+
 function App() {
   return (
     <>
       <Header/>
-      <main className="px-4 pt-20 space-y-20">
+      <main className="px-4 pt-20 space-y-20 mb-20">
         <section className="space-y-12">
           <MainCard
             title={"Indulge your passions"}
@@ -27,6 +31,10 @@ function App() {
             img={"src/assets/illustration-work-anywhere.svg"}
           />
         </section>
+        <PricingPlans>
+          <PlanFree/>
+          <PlanPro/>
+        </PricingPlans>
       </main>
     </>
     
