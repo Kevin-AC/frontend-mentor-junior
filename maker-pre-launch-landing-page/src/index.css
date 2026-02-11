@@ -1,68 +1,64 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme{
+    --color-Neutral-900:#080C20 ;
+    --color-Neutral-400:##777F98;
+    --color-Neutral-0:#FFFFFF;
+    --color-Cyan:#3EE9E5;
+    --color-Red-400:#FF2965;
+    --color-Blue-800:#093F68;
+    --color-Blue-Gray-500:#6B8CA4;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
+body{
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0;
+  font-style: normal;
+  background-color: var(--color-Neutral-900);
+  display: grid;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.Text-Preset-1{
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 120%;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.Text-Preset-1-Mobile{
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 800;
+}
+.Text-Preset-2{
+  font-size: 40px;
+  line-height: 140%;
+  font-weight: 800;
+}
+.Text-Preset-3{
+  font-size: 32px;
+  line-height: 140%;
+  font-weight: 800;
+}
+.Text-Preset-4{
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 800;
+}
+.Text-Preset-5{
+  font-size: 15px;
+  line-height: 160%;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+.Text-Preset-6{
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 800;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.Text-Preset-7{
+  font-size:12px;
+  line-height: 160%;
+  font-weight: 500;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+
+
+
