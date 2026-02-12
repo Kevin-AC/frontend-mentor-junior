@@ -1,6 +1,6 @@
 export default function PlanPro() {
     return (
-        <article className="bg-Cyan  w-full h-111.25 space-y-6 rounded-lg px-5 pt-16 pb-8 relative">
+        <article className="bg-Cyan  w-full md:w-111.25 h-111.25 space-y-6 rounded-lg px-5 md:px-8 pt-16 pb-8 relative">
             <img className="absolute -mt-24" src="src/assets/icon-paid.svg" alt="icon-free" />
             <div className="space-y-4">
                 <h2 className="Text-Preset-4 text-Neutral-900">Dive right in</h2>
