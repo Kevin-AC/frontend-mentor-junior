@@ -41,9 +41,9 @@ function App() {
       </main>
       <footer className="px-4 pb-16 space-y-10 bg-[url(src/assets/bg-footer-squiggle.svg)] bg-position-[center_60px] bg-size-[750px] bg-no-repeat">
         <h2 className="Text-Preset-3 text-Neutral-0 text-center">Get notified when we launch</h2>
-        <div className="flex flex-col space-y-5 justify-center items-center"> 
+        <div className="flex flex-col lg:flex-row lg:gap-5 space-y-5 lg:space-y-0 justify-center items-center "> 
           <input className="w-[320px] bg-Blue-800 h-11.25 rounded-full px-5 py-3 font-bold text-sm text-Blue-Gray-500" type="text" placeholder="Email address" />
-          <button className="w-[320px] h-11.25 rounded-full px-6 py-3 bg-Cyan text-Blue-800 Text-Preset-6">Get notified</button>
+          <button className="w-[320px] lg:w-34.25 h-11.25 rounded-full px-6 py-3 bg-Cyan text-Blue-800 Text-Preset-6">Get notified</button>
         </div>
       </footer>
     </>
