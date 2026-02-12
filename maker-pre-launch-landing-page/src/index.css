@@ -16,17 +16,22 @@ body{
   background-color: var(--color-Neutral-900);
   display: grid;
   place-items: center;
+  overflow-x: hidden;
 }
-
-.Text-Preset-1{
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 120%;
+.test{
+  border: 1px solid white;
 }
 .Text-Preset-1-Mobile{
   font-size: 32px;
   line-height: 120%;
   font-weight: 800;
+}
+@media (min-width: 768px) {
+  .Text-Preset-1 {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 800;
+  }
 }
 .Text-Preset-2{
   font-size: 40px;

@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header/>
-      <main className="px-4 pt-20 space-y-20 pb-20">
+      <main className="px-4 pt-20 space-y-20 pb-20 md:mt-20">
         <section className="space-y-12">
           <MainCard
             title={"Indulge your passions"}
