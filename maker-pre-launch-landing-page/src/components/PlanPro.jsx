@@ -1,7 +1,7 @@
 export default function PlanPro() {
     return (
         <article className="bg-Cyan  w-full md:w-111.25 h-111.25 space-y-6 rounded-lg px-5 md:px-8 pt-16 pb-8 relative">
-            <img className="absolute -mt-24" src="src/assets/icon-paid.svg" alt="icon-free" />
+            <img className="absolute -mt-24" src="assets/icon-paid.svg" alt="icon-free" />
             <div className="space-y-4">
                 <h2 className="Text-Preset-4 text-Neutral-900">Dive right in</h2>
                 <p className="Text-Preset-5 text-Neutral-900 opacity-60">Ready for the big time? Our paid plan will help you take your business to the next level.</p>

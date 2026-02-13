@@ -1,7 +1,7 @@
 export default function PlanFree() {
     return (
         <article className="bg-Blue-800  w-full md:w-111.25 h-102.25 space-y-6 rounded-lg px-5 md:px-8 pt-12 pb-8 relative">
-            <img className="absolute -mt-18" src="src/assets/icon-free.svg" alt="icon-free" />
+            <img className="absolute -mt-18" src="assets/icon-free.svg" alt="icon-free" />
             <div className="space-y-4">
                 <h2 className="Text-Preset-4 text-Neutral-0">Dip your toe</h2>
                 <p className="Text-Preset-5 text-Neutral-0 opacity-60">Just getting started? No problem at all! Our free plan will take you a long way.</p>
