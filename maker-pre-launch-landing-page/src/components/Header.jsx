@@ -4,7 +4,7 @@ export default  function Header(){
             <img className="md:absolute md:top-16 md:left-8 lg:left-42" src="assets/logo.svg" alt="logo" />
             <div className="w-screen md:absolute z-20 md:top-32 md:mt-10">
                 <img className="sm:hidden" src="assets/illustration-hero-mobile.png" alt="illustration-hero-mobile" />
-                <div className="md:h-145 justify-between hidden md:flex bg-[url(assets/bg-hero-squiggle.svg)] bg-position-[center_0px] bg-size-[600px] bg-no-repeat">
+                <div className="md:h-145 justify-between hidden md:flex bg-[url(public/assets/bg-hero-squiggle.svg)] bg-position-[center_0px] bg-size-[600px] bg-no-repeat">
                     <img className="absolute -left-64 lg:-left-10" src="assets/illustration-hero-left.svg" alt="illustration-hero-left" />
                     <img className="absolute -right-64 lg:-right-10" src="assets/illustration-hero-right.svg" alt="illustration-hero-right" />
                 </div>
