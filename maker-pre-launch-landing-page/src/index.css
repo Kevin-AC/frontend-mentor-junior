@@ -9,6 +9,11 @@
     --color-Blue-800:#093F68;
     --color-Blue-Gray-500:#6B8CA4;
 }
+.buttonSpecial{
+  @apply hover:ring-Cyan hover:cursor-pointer ring-offset-2 ring-offset-Neutral-900 hover:text-Neutral-0 ring-2 outline-none focus:ring-Red-400
+}
+
+
 body{
   font-family: "Manrope", sans-serif;
   letter-spacing: 0;

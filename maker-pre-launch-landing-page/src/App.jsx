@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Header from "./components/Header"
 import MainCard from "./components/MainCard"
 import PlanFree from "./components/PlanFree"
@@ -5,6 +6,15 @@ import PlanPro from "./components/PlanPro"
 import PricingPlans from "./components/PricingPlans"
 
 function App() {
+  const [email,setEmail] = useState('')
+  const [error, setError] = useState(false);
+  const handleSubmit=()=>{
+    if(!email) return
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const valid = regex.test(email) && email.length > 0;
+    setError(!valid)
+    return valid
+  }
   return (
     <>
       <Header/>
@@ -41,9 +51,14 @@ function App() {
       </main>
       <footer className="px-4 pb-16 space-y-10 bg-[url(src/assets/bg-footer-squiggle.svg)] bg-position-[center_60px] bg-size-[750px] bg-no-repeat">
         <h2 className="Text-Preset-3 text-Neutral-0 text-center">Get notified when we launch</h2>
-        <div className="flex flex-col lg:flex-row lg:gap-5 space-y-5 lg:space-y-0 justify-center items-center "> 
-          <input className="w-[320px] bg-Blue-800 h-11.25 rounded-full px-5 py-3 font-bold text-sm text-Blue-Gray-500" type="text" placeholder="Email address" />
-          <button className="w-[320px] lg:w-34.25 h-11.25 rounded-full px-6 py-3 bg-Cyan text-Blue-800 Text-Preset-6">Get notified</button>
+        <div className="flex flex-col lg:flex-row lg:gap-5 space-y-6 lg:space-y-0 justify-center items-center "> 
+          <div className="flex flex-col relative">
+            <input value={email} onChange={(e) => setEmail(e.target.value)}
+              className="w-[320px] bg-Blue-800 h-11.25 rounded-full px-5 py-3 font-bold text-sm text-Blue-Gray-500 buttonSpecial" type="text" placeholder="Email address" />
+            <span className={`${error ? 'text-Red-400 Text-Preset-7 absolute top-12 lg:top-14' : 'hidden'}`}>Oops! That doesn’t look like an email address</span>
+          </div>
+          <button onClick={handleSubmit}
+           className="w-[320px] lg:w-34.25 h-11.25 rounded-full px-6 py-3 bg-Cyan text-Blue-800 Text-Preset-6 buttonSpecial hover:bg-Blue-800 ">Get notified</button>
         </div>
       </footer>
     </>
