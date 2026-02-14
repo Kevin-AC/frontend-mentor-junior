@@ -1,4 +1,5 @@
-import SelecInput from './Components/SelectInput'
+import Form from './Components/Form'
+
 import './index.css'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-     <SelecInput/>
+      <Form/>
     </>
   )
 }
