@@ -1,4 +1,4 @@
-
+import SelecInput from './Components/SelectInput'
 import './index.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      
+     <SelecInput/>
     </>
   )
 }
