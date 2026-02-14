@@ -1,0 +1,57 @@
+@import "tailwindcss";
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@theme{
+  --color-Neutral-900:#25293A;
+  --color-Neutral-800:#333950;
+  --color-Neutral-500:#747b95;
+  --color-Neutral-50:#FAFAFA;
+  --color-Neutral-0:#FFFFFF;
+  --color-Blue-500:#5175FF;
+  --color-Blue-300:#829CFF;
+  --color-Blue-100:#E4EAFF;
+  --color-Red-400:#F05B5B;
+}
+body{
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+.TextPreset1{
+  font-size: 56px;
+  font-weight: bold;
+}
+.TextPreset1Tablet{
+  font-size: 40px;
+  font-weight: bold;
+}
+.TextPreset2{
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: bold;
+}
+.TextPreset3{
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+}
+.TextPreset4{
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+}
+.TextPreset5{
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: bold;
+}
+.TextPreset6{
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
