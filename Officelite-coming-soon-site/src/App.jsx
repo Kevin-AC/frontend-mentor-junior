@@ -9,15 +9,13 @@ function App() {
 
   return (
    <>
-   <nav className='flex justify-center'>
-        <img  src="/assets/shared/logo.svg" alt="logo" />
-   </nav>
-      <header className="relative">
-        <img className='absolute -z-10 -top-44' src="/assets/home/bg-pattern-header.svg" alt="bg-pattern-header" />
+      <header className="relative px-4 pt-12 lg:h-screen overflow-hidden grid place-items-center">
+        <img className="mx-auto md:ml-10 lg:ml-96 w-32 md:w-40" src="/assets/shared/logo.svg" alt="" />
+        <img className='absolute -z-10 -top-44 md:-top-96 md:-right-96' src="/assets/home/bg-pattern-header.svg" alt="bg-pattern-header" />
         <Hero />
       </header>
-      <main className='relative space-y-16 flex flex-col items-center bg-Neutral-50'>
-        <section className='space-y-8 z-20'>
+      <main className='relative space-y-16 md:px-10  bg-Neutral-50 grid place-content-center'>
+        <section className='w-full space-y-8 z-20 lg:flex lg:gap-8 justify-center'>
           <Card
             type="Basic"
             price={'Free'}
@@ -49,11 +47,11 @@ function App() {
             <Button text={'Try for Free'} style={'PlanButton'} />
           </Card >
         </section>
-        <section className='w-full h-full pb-20 space-y-8 grid place-items-center z-20 '>
+        <section className='w-full h-full  flex flex-col gap-10 lg:flex-row lg:justify-between items-center z-20 '>
           <Timer/>
           <Button text={'Get Started'} style={'buttonFooter'} />
         </section>
-        <div className='w-full h-312 absolute bg-Neutral-900 bottom-0 z-10 bg-[url(/assets/home/bg-pattern-footer.svg)] bg-position-[center_140px] bg- bg-cover bg-no-repeat'></div>
+        <div className='w-full h-312 md:h-[986px] lg:h-[603px] absolute bg-Neutral-900 bottom-0 z-10 bg-[url(/assets/home/bg-pattern-footer.svg)] bg-position-[center_140px] md:bg-bottom  bg-cover md:bg-contain bg-no-repeat'></div>
       </main>
    </>
   )
