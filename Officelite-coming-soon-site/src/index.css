@@ -17,13 +17,19 @@
   --color-Red-400:#F05B5B;
 }
 .buttonPrimary{
-  @apply  hover:bg-Blue-300 bg-Blue-500 px-10 py-3 text-Neutral-0 focus:ring-2 focus:ring-Blue-500 focus:ring-offset-2 focus:ring-offset-white
+  @apply  hover:bg-Blue-300 bg-Blue-500 px-10 py-3 text-Neutral-0 focus:ring-2 focus:ring-Blue-500  focus:ring-offset-4 focus:ring-offset-white
+}
+.buttonFooter{
+  @apply hover:bg-Blue-300 bg-Blue-500 px-10 py-3 text-Neutral-0 focus:ring-2 focus:ring-Neutral-0 focus:ring-offset-4 focus:ring-offset-Neutral-900
 }
 .buttonSecondary{
   @apply text-Blue-500 bg-Blue-100 hover:bg-Blue-500 hover:text-Neutral-0 focus:ring-2 focus:ring-Blue-500 focus:ring-offset-2 focus:ring-offset-white
 }
 .proPlanButton{
-  @apply bg-Neutral-50 text-Blue-500 hover:bg-Blue-100 focus:ring-2 focus:ring-Neutral-0 focus:ring-offset-2 focus:ring-offset-Blue-500
+  @apply  text-Blue-500 bg-Neutral-0 hover:bg-Blue-100 hover:cursor-pointer
+}
+.PlanButton{
+  @apply  text-Blue-500 bg-Blue-100 hover:bg-Blue-500 hover:text-Neutral-0 hover:cursor-pointer
 }
 .bgIconArrow{
   @apply bg-[url('/assets/sign-up/icon-arrow-down.svg')] bg-no-repeat bg-[right_15px]
@@ -32,7 +38,9 @@ body{
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   display: grid;
-  place-content: center;
+  place-items: center;
+  padding-top: 40px;
+  background-color:var(--color-Neutral-50);
 }
 .TextPreset1{
   font-size: 56px;
