@@ -1,14 +1,10 @@
 
-import TimerCard from './TimerCard'
-export default function Timer(){
+export default function Timer({style,children}){
     return(
         <section className='flex flex-col gap-4'>
-            <h2 className='TextPreset6 text-Neutral-0 uppercase text-center'>Coming <span className='text-Blue-500'>4 Nov 2020</span></h2>
+            <h2 className={`TextPreset6  uppercase text-center ${style}`}>Coming <span className='text-Blue-500'>4 Nov 2020</span></h2>
             <div className='flex gap-4'>
-                <TimerCard text='days' dayNumber='47' />
-                <TimerCard text='hours' dayNumber='07' />
-                <TimerCard text='min' dayNumber='56' />
-                <TimerCard text='sec' dayNumber='14' />
+                {children}
             </div>
         </section>
     )
