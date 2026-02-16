@@ -1,13 +1,14 @@
 import Formulario from './Components/Formulario.jsx'
 import Timer from './Components/Timer.jsx'
 import TimerCard from './Components/TimerCard'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export default function SignUp(){
-    const navigate = useNavigate()
     return(
         <>
             <header className='mt-10 mb-16 bg-Neutral-50 absolute top-0 left-0 right-0 z-50 lg:w-80 '>
-                    <img onClick={() => navigate('/')} className="mx-auto md:ml-10 lg:ml-96 w-32 md:w-40 cursor-pointer" src="/assets/shared/logo.svg" alt="logo" />
+                <Link to="/">
+                    <img className="mx-auto md:ml-10 lg:ml-96 w-32 md:w-40 cursor-pointer" src="/assets/shared/logo.svg" alt="logo" />
+                </Link>
             </header>
             <main className='w-screen min-h-screen flex flex-col items-center justify-center px-4 pt-32 md:pt-40  lg:px-0 pb-12 relative'>
                 <div className='flex flex-col lg:flex-row w-full md:items-center lg:w-3/4 justify-between  bg-Neutral-50 '>
