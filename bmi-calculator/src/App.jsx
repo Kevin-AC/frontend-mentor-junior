@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <main className="w-full font-Inter ">
-        <section className="px-6 pt-9 text-center flex flex-col items-center gap-8">
+        <section className="px-6 pt-9 text-center flex flex-col items-center gap-8 bg-Blue-100">
           <img src="src/assets/images/logo.svg" alt="logo-icon" />
           <div className="w-[328px]">
               <h1 className="Preset-2 text-Blue-900 px-3">Body Mass<br/>Index Calculator</h1>

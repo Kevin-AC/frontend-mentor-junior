@@ -8,10 +8,10 @@ export default function Checkbox({name}){
     };
     return(
         <div className="flex items-center">
-            <label htmlFor="terminos" className="relative flex items-center justify-center w-8 h-8">
+            <label htmlFor="Unidad" className="relative flex items-center justify-center w-8 h-8">
                 <input
                     type="checkbox"
-                    id="terminos"
+                    id="Unidad"
                     checked={isChecked}
                     onChange={handleCheckboxChange}
                     className="Check z-10 peer"

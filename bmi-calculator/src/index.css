@@ -46,10 +46,13 @@
   @apply text-[0.875rem] leading-[1.5] tracking-[0] font-bold;
 }
 
-.Preset-7 {
+.Preset-7-Regular {
   @apply text-[0.875rem] leading-[1.5] tracking-[0] font-normal;
 }
 .Check{
   @apply w-5 h-5 relative appearance-none border-2 border-slate-300 rounded-full checked:bg-Blue-500 checked:border-Blue-500 transition-all duration-200 ease-in-out cursor-pointer;
   
+}
+.InputText{
+  @apply w-[280px] h-[77px] mt-2 p-6 outline-none focus:border-Blue-500 focus:border-2 border border-Grey-500 rounded-2xl text-Blue-900 placeholder:text-Grey-500;
 }
