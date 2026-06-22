@@ -54,5 +54,5 @@
   
 }
 .InputText{
-  @apply w-[280px] h-[77px] mt-2 p-6 outline-none focus:border-Blue-500 focus:border-2 border border-Grey-500 rounded-2xl text-Blue-900 placeholder:text-Grey-500;
+  @apply  h-[77px] mt-2 p-6 outline-none focus:border-Blue-500 focus:border-2 border border-Grey-500 rounded-2xl text-Blue-900 placeholder:text-Grey-500;
 }
