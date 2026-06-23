@@ -76,7 +76,7 @@ export default function Card(){
     };
 
     return(
-        <article className="bg-White w-82 text-left p-6 rounded-2xl shadow space-y-6 ">
+        <article className="bg-White w-82 text-left p-6 rounded-2xl shadow-lg space-y-6 ">
             <h3 className="Preset-4">Enter your details below</h3>
             <div className="flex gap-9">
                 <Checkbox name={"Metric"} checked={system === "metric"}
