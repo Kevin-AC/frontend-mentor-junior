@@ -5,9 +5,9 @@ import TipsCard from "./components/TipsCard"
 function App() {
   return (
     <>
-      <main className="w-full font-Inter   ">
-        <section className="px-6 pt-9  text-center flex flex-col items-center gap-8 rounded-b-[35px] bg-linear-to-tr from-White  to-Gradient-2 ">
-          <img src="src/assets/images/logo.svg" alt="logo-icon" />
+      <main className="w-full font-Inter">
+        <section className="px-6 pt-8  text-center flex flex-col items-center gap-8 rounded-b-[35px] bg-linear-to-tr from-White  to-Gradient-2 ">
+          <img className="w-10" src="src/assets/images/logo.svg" alt="logo-icon" />
           <div className="w-82">
               <h1 className="Preset-2 text-Blue-900 px-3">Body Mass<br/>Index Calculator</h1>
               <p className="pt-6 Preset-6-Regular text-Grey-500">Better understand your weight in relation to your height using our body mass index (BM) calculator. 
@@ -27,8 +27,8 @@ function App() {
             <p className="Preset-6-Regular text-Grey-500">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
           </article>
         </section>
-        <section className="px-6 py-12 bg-linear-to-r from-White from-5%  to-Gradient-2 ">
-          <div className="w-81.75 flex flex-col gap-10">
+        <section className="px-6 py-12  bg-linear-to-r from-Gradient-1/10  to-Gradient-2/30 ">
+          <div className="w-81.75 flex flex-col gap-10 ">
             <TipsCard
               title={"Healthy eating"}
               text={"Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood."}
@@ -46,8 +46,8 @@ function App() {
             />
           </div>
         </section>
-        <section className="flex flex-col items-center gap-16  ">
-          <article className="text-center w-81.75 space-y-8 mt-22">
+        <section className="flex flex-col items-center gap-16 pb-12 ">
+          <article className="text-center w-81 space-y-8 mt-22">
             <h2 className="Preset-3 text-Blue-900">Limitations of BMI</h2>
             <p className="Preset-6-Regular text-Grey-500">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
           </article>

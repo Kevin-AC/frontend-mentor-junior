@@ -56,3 +56,6 @@
 .InputText{
   @apply  h-[77px] mt-2 p-6 outline-none focus:border-Blue-500 focus:border-2 border border-Grey-500 rounded-2xl text-Blue-900 placeholder:text-Grey-500;
 }
+.Shadow{
+  @apply shadow-[16px_32px_56px_0px_rgba(143,174,207,0.25)]
+}

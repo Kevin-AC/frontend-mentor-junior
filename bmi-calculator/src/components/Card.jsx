@@ -89,8 +89,8 @@ export default function Card(){
 
                {system === "metric" ? (
                     <div>
-                        <InputText name={"Height"} value={height} onChange={(e) => setHeight(e.target.value)}/>
-                        <InputText name={"Weight"} value={weight} onChange={(e)=> setWeight (e.target.value)}/>
+                        <InputText name={"Height"} UnidadMedida={"cm"} value={height} onChange={(e) => setHeight(e.target.value)}/>
+                        <InputText name={"Weight"} UnidadMedida={"kg"} value={weight} onChange={(e)=> setWeight (e.target.value)}/>
                     </div>
 
                 ) : (//renderizado condicional para imperial
