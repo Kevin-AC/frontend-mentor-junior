@@ -6,7 +6,8 @@ function App() {
   return (
     <>
       <main className="w-full font-Inter">
-        <div className="px-6 pt-8 sm:px-10 flex flex-col items-center rounded-b-[35px] bg-linear-to-tr from-White to-Gradient-2 ">
+        {/*hero*/}
+        <div className="px-6 pt-8 mb-120 sm:mb-70 sm:pb-52   sm:px-10 flex flex-col items-center rounded-b-[35px] bg-linear-to-tr from-White to-Gradient-2 ">
           <section className="w-82 sm:w-171.5 flex flex-col gap-8 sm:gap-10 text-center items-center" >
                <img className="w-10" src="src/assets/images/logo.svg" alt="logo-icon" />
                 <div className="">
@@ -20,15 +21,17 @@ function App() {
                 </div>
             </section>
         </div>
-        <section className="flex flex-col items-center gap-12 pt-105 pb-12">
-          <picture className="max-w-93.75">
-            <img src="src/assets/images/image-man-eating.webp" alt="man-eating" />
+        {/*result*/}
+        <section className="flex flex-col sm:flex-row items-center gap-12 sm:gap-18 pb-12  max-w-6xl mx-auto  sm:-ml-20">
+          <picture className="w-full sm:w-1/2 max-w-120 h-auto  ">
+            <img className="w-full h-auto object-cover" src="src/assets/images/image-man-eating.webp" alt="man-eating" />
           </picture>
-          <article className="w-82 space-y-8">
+          <article className="w-82 sm:w-82.75 max-w-120 space-y-6  sm:text-left">
             <h2 className="Preset-3 text-Blue-900">What your BMI result means</h2>
             <p className="Preset-6-Regular text-Grey-500">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
           </article>
         </section>
+        {/*tips*/}
         <section className="px-6 py-12  bg-linear-to-r from-Gradient-1/10  to-Gradient-2/30 ">
           <div className="w-81.75 flex flex-col gap-10 ">
             <TipsCard
