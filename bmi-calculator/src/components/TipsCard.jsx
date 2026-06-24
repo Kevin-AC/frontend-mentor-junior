@@ -1,7 +1,7 @@
 export default function TipsCard({imgUrl,title,text}){
     return(
-        <article className="flex flex-col gap-8">
-            <picture>
+        <article className="flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-12 ">
+            <picture className="sm:w-16 sm:h-16 shrink-0 sm:flex sm:items-center justify-center">
                 <img src={imgUrl} alt={title} />
             </picture>
             <div className="space-y-6">

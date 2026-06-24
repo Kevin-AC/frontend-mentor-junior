@@ -5,7 +5,7 @@ import TipsCard from "./components/TipsCard"
 function App() {
   return (
     <>
-      <main className="w-full font-Inter">
+      <main className="w-full font-Inter sm:space-y-20 ">
         {/*hero*/}
         <div className="px-6 pt-8 mb-120 sm:mb-70 sm:pb-52   sm:px-10 flex flex-col items-center rounded-b-[35px] bg-linear-to-tr from-White to-Gradient-2 ">
           <section className="w-82 sm:w-171.5 flex flex-col gap-8 sm:gap-10 text-center items-center" >
@@ -32,8 +32,8 @@ function App() {
           </article>
         </section>
         {/*tips*/}
-        <section className="px-6 py-12  bg-linear-to-r from-Gradient-1/10  to-Gradient-2/30 ">
-          <div className="w-81.75 flex flex-col gap-10 ">
+        <section className="px-6 py-12 sm:px-8 sm:py-13 sm:flex flex-col items-center  bg-linear-to-r from-Gradient-1/10  to-Gradient-2/30  ">
+          <div className="w-81.75 sm:w-171.5 flex flex-col gap-10 ">
             <TipsCard
               title={"Healthy eating"}
               text={"Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood."}
