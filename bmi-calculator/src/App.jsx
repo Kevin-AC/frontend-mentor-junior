@@ -6,18 +6,20 @@ function App() {
   return (
     <>
       <main className="w-full font-Inter">
-        <section className="px-6 pt-8  text-center flex flex-col items-center gap-8 rounded-b-[35px] bg-linear-to-tr from-White  to-Gradient-2 ">
-          <img className="w-10" src="src/assets/images/logo.svg" alt="logo-icon" />
-          <div className="w-82">
-              <h1 className="Preset-2 text-Blue-900 px-3">Body Mass<br/>Index Calculator</h1>
-              <p className="pt-6 Preset-6-Regular text-Grey-500">Better understand your weight in relation to your height using our body mass index (BM) calculator. 
-                  While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
-              </p>
-            </div>
-          <div className="-mb-92.5 z-10 relative">
-              <Card/>
-            </div>
-        </section>
+        <div className="px-6 pt-8 sm:px-10 flex flex-col items-center rounded-b-[35px] bg-linear-to-tr from-White to-Gradient-2 ">
+          <section className="w-82 sm:w-171.5 flex flex-col gap-8 sm:gap-10 text-center items-center" >
+               <img className="w-10" src="src/assets/images/logo.svg" alt="logo-icon" />
+                <div className="">
+                  <h1 className="Preset-2 text-Blue-900 px-3">Body Mass<br />Index Calculator</h1>
+                  <p className="pt-6 Preset-6-Regular text-Grey-500">Better understand your weight in relation to your height using our body mass index (BM) calculator.
+                    While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
+                  </p>
+                </div>
+                <div className="-mb-92.5 w-full"> 
+                    <Card />
+                </div>
+            </section>
+        </div>
         <section className="flex flex-col items-center gap-12 pt-105 pb-12">
           <picture className="max-w-93.75">
             <img src="src/assets/images/image-man-eating.webp" alt="man-eating" />

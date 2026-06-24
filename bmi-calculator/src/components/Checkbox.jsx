@@ -2,8 +2,8 @@
 export default function Checkbox({name,checked,onChange}){
     
     return(
-        <div className="flex items-center">
-            <label htmlFor="Unidad" className="relative flex items-center justify-center w-8 h-8">
+        <div className="w-full flex items-center">
+            <label htmlFor="Unidad" className="relative flex items-center justify-center w-9 h-9">
                 <input
                     type="checkbox"
                     id="Unidad"

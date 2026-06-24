@@ -76,9 +76,9 @@ export default function Card(){
     };
 
     return(
-        <article className="bg-White w-82 text-left p-6 rounded-2xl shadow-lg space-y-6 ">
+        <article className="bg-White w-full text-left p-6 sm:p-8 rounded-2xl shadow-lg space-y-6 ">
             <h3 className="Preset-4">Enter your details below</h3>
-            <div className="flex gap-9">
+            <div className="flex gap-6 ">
                 <Checkbox name={"Metric"} checked={system === "metric"}
                     onChange={() => setSystem("metric")} />
                 <Checkbox name={"Imperial"} checked={system === "imperial"}
@@ -88,9 +88,17 @@ export default function Card(){
 
 
                {system === "metric" ? (
-                    <div>
-                        <InputText name={"Height"} UnidadMedida={"cm"} value={height} onChange={(e) => setHeight(e.target.value)}/>
-                        <InputText name={"Weight"} UnidadMedida={"kg"} value={weight} onChange={(e)=> setWeight (e.target.value)}/>
+                    <div className="sm:flex gap-6">
+                        <InputText 
+                            name={"Height"} 
+                            UnidadMedida={"cm"} 
+                            value={height} 
+                            onChange={(e) => setHeight(e.target.value)}/>
+                        <InputText 
+                            name={"Weight"} 
+                            UnidadMedida={"kg"} 
+                            value={weight} 
+                            onChange={(e)=> setWeight (e.target.value)}/>
                     </div>
 
                 ) : (//renderizado condicional para imperial
