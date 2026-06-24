@@ -51,12 +51,13 @@ function App() {
             />
           </div>
         </section>
+        {/*Limitation BMI */}
         <section className="flex flex-col items-center gap-16 pb-12 ">
-          <article className="text-center w-81 space-y-8 mt-22">
+          <article className="text-center w-81 sm:w-170 space-y-8 mt-22">
             <h2 className="Preset-3 text-Blue-900">Limitations of BMI</h2>
             <p className="Preset-6-Regular text-Grey-500">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
           </article>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-6 sm:gap-8 sm:max-w-180">
             <LimitatiosBmiCard
               title={"Gender"}
               imgUrl={"src/assets/images/icon-gender.svg"}
