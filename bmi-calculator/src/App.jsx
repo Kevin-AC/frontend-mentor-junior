@@ -9,7 +9,7 @@ function App() {
         <header className="w-full max-w-360 mx-auto lg:h-184.5 relative px-6 pt-8 sm:px-10 lg:px-36 lg:py-22 font-Inter">
           <div className="w-full flex flex-col items-center lg:items-start gap-8 lg:gap-6">
             <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-full rounded-b-4xl bg-linear-to-tr from-White to-Gradient-2  z-10" aria-hidden="true" />
-            <img className="w-10 lg:w-16 z-30" src="src/assets/images/logo.svg" alt="logo-icon" />
+            <img className="w-10 lg:w-16 z-30" src="/images/logo.svg" alt="logo-icon" />
             <article className="flex flex-col gap-8 sm:gap-10 text-center items-center lg:flex-row z-30" >
               
               <div className=" lg:w-141 lg:text-left">
@@ -28,7 +28,7 @@ function App() {
         <section className="w-full lg:px-36 max-w-360">
           <div className="w-full flex flex-col  sm:flex-row items-center gap-8 sm:gap-2 lg:gap-22">
             <picture className="w-auto">
-              <img className="w-full sm:w-108 object-cover sm:-ml-20 lg:m-0" src="src/assets/images/image-man-eating.webp" alt="man-eating" />
+              <img className="w-full sm:w-108 object-cover sm:-ml-20 lg:m-0" src="/images/image-man-eating.webp" alt="man-eating" />
             </picture>
             <article className="w-82 lg:w-116 space-y-6  sm:text-left">
               <h2 className="text-3xl lg:text-5xl leading-[1.1] tracking-tighter font-semibold text-Blue-900">What your BMI result means</h2>
@@ -43,17 +43,17 @@ function App() {
             <TipsCard
               title={"Healthy eating"}
               text={"Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood."}
-              imgUrl={"src/assets/images/icon-eating.svg"}
+              imgUrl={"/images/icon-eating.svg"}
             />
             <TipsCard
               title={"Regular exercise"}
               text={"Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity."}
-              imgUrl={"src/assets/images/icon-exercise.svg"}
+              imgUrl={"/images/icon-exercise.svg"}
             />
             <TipsCard
               title={"Adequate sleep"}
               text={"Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation."}
-              imgUrl={"src/assets/images/icon-sleep.svg"}
+              imgUrl={"/images/icon-sleep.svg"}
             />
           </div>
         </section>
@@ -66,29 +66,29 @@ function App() {
           <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-6 sm:gap-8 sm:max-w-180">
             <LimitatiosBmiCard
               title={"Gender"}
-              imgUrl={"src/assets/images/icon-gender.svg"}
+              imgUrl={"/images/icon-gender.svg"}
               text={"The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI."}
             />
             <LimitatiosBmiCard
               title={"Age"}
-              imgUrl={"src/assets/images/icon-age.svg"}
+              imgUrl={"/images/icon-age.svg"}
               text={"In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content."}
             />
 
             <LimitatiosBmiCard
               title={"Muscle"}
-              imgUrl={"src/assets/images/icon-muscle.svg"}
+              imgUrl={"/images/icon-muscle.svg"}
               text={"BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat."}
             />
 
             <LimitatiosBmiCard
               title={"Pregnancy"}
-              imgUrl={"src/assets/images/icon-pregnancy.svg"}
+              imgUrl={"/images/icon-pregnancy.svg"}
               text={"Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child."}
             />
             <LimitatiosBmiCard
               title={"Race"}
-              imgUrl={"src/assets/images/icon-race.svg"}
+              imgUrl={"/images/icon-race.svg"}
               text={"Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse."}
             />
 
