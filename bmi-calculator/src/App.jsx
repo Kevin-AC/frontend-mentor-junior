@@ -24,21 +24,22 @@ function App() {
             </article>
           </div>
         </header>
-      <main className="w-full flex flex-col items-center border mt-16">
-        <section className="w-full lg:px-36 max-w-360 border">
+      <main className="w-full flex flex-col items-center gap-16 mt-16">
+        <section className="w-full lg:px-36 max-w-360">
           <div className="w-full flex flex-col  sm:flex-row items-center gap-8 sm:gap-2 lg:gap-22">
             <picture className="w-auto">
               <img className="w-full sm:w-108 object-cover sm:-ml-20 lg:m-0" src="src/assets/images/image-man-eating.webp" alt="man-eating" />
             </picture>
-            <article className="w-82 lg:w-116 space-y-6  sm:text-left border">
+            <article className="w-82 lg:w-116 space-y-6  sm:text-left">
               <h2 className="text-3xl lg:text-5xl leading-[1.1] tracking-tighter font-semibold text-Blue-900">What your BMI result means</h2>
               <p className="Preset-6-Regular text-Grey-500">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
             </article>
           </div>
         </section>
         
-        <section className="px-6 py-12 sm:px-8 sm:py-13 sm:flex flex-col items-center  bg-linear-to-r from-Gradient-1/10  to-Gradient-2/30  ">
-          <div className="w-81.75 sm:w-171.5 flex flex-col gap-10 ">
+        <section className="max-w-360 relative px-6 py-12 sm:px-8 sm:py-13 lg:px-32 lg:py-24 sm:flex flex-col items-center lg:flex-row">
+          <div className="absolute top-0 left-[-50vw] right-[-50vw] lg:right-[5%] h-full bg-linear-to-r from-Gradient-1/5  to-Gradient-2/30 lg:rounded-3xl z-10 " aria-hidden="true" />
+          <div className="w-81.75 sm:w-171.5 lg:w-fit flex flex-col lg:flex-row gap-10 lg:gap-8 z-30">
             <TipsCard
               title={"Healthy eating"}
               text={"Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood."}
