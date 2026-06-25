@@ -1,27 +1,33 @@
 import Card from "./components/Card"
-import LimitatiosBmiCard from "./components/LimitationsBmiCard"
-import TipsCard from "./components/TipsCard"
+//import LimitatiosBmiCard from "./components/LimitationsBmiCard"
+//import TipsCard from "./components/TipsCard"
 
 function App() {
   return (
     <>
-      <main className="w-full font-Inter sm:space-y-20 ">
         {/*hero*/}
-        <div className="px-6 pt-8 mb-120 sm:mb-70 sm:pb-52   sm:px-10 flex flex-col items-center rounded-b-[35px] bg-linear-to-tr from-White to-Gradient-2 ">
-          <section className="w-82 sm:w-171.5 flex flex-col gap-8 sm:gap-10 text-center items-center" >
-               <img className="w-10" src="src/assets/images/logo.svg" alt="logo-icon" />
-                <div className="">
-                  <h1 className="Preset-2 text-Blue-900 px-3">Body Mass<br />Index Calculator</h1>
-                  <p className="pt-6 Preset-6-Regular text-Grey-500">Better understand your weight in relation to your height using our body mass index (BM) calculator.
-                    While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
-                  </p>
-                </div>
-                <div className="-mb-92.5 w-full"> 
-                    <Card />
-                </div>
-            </section>
-        </div>
-        {/*result*/}
+        <header className="w-full max-w-360 mx-auto lg:h-184.5 relative px-6 pt-8 sm:px-10 lg:px-36 lg:py-22 font-Inter">
+          <div className="w-full flex flex-col items-center lg:items-start gap-8 lg:gap-6">
+            <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-full rounded-b-4xl bg-linear-to-tr from-White to-Gradient-2  z-10" aria-hidden="true" />
+            <img className="w-10 lg:w-16 z-30" src="src/assets/images/logo.svg" alt="logo-icon" />
+            <article className="flex flex-col gap-8 sm:gap-10 text-center items-center lg:flex-row z-30" >
+              
+              <div className=" lg:w-141 lg:text-left">
+                <h1 className="Preset-2 text-Blue-900">Body Mass<br/>Index Calculator</h1>
+                <p className="pt-6 Preset-6-Regular text-Grey-500 lg:w-116">Better understand your weight in relation to your height using our body mass index (BM) calculator.
+                  While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
+                </p>
+              </div>
+              <div className="w-full lg:w-141">
+                <Card />
+              </div>
+            </article>
+          </div>
+        </header>
+      {/*
+        
+        <main>
+       
         <section className="flex flex-col sm:flex-row items-center gap-12 sm:gap-18 pb-12  max-w-6xl mx-auto  sm:-ml-20">
           <picture className="w-full sm:w-1/2 max-w-120 h-auto  ">
             <img className="w-full h-auto object-cover" src="src/assets/images/image-man-eating.webp" alt="man-eating" />
@@ -31,7 +37,7 @@ function App() {
             <p className="Preset-6-Regular text-Grey-500">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
           </article>
         </section>
-        {/*tips*/}
+        
         <section className="px-6 py-12 sm:px-8 sm:py-13 sm:flex flex-col items-center  bg-linear-to-r from-Gradient-1/10  to-Gradient-2/30  ">
           <div className="w-81.75 sm:w-171.5 flex flex-col gap-10 ">
             <TipsCard
@@ -51,7 +57,7 @@ function App() {
             />
           </div>
         </section>
-        {/*Limitation BMI */}
+       
         <section className="flex flex-col items-center gap-16 pb-12 ">
           <article className="text-center w-81 sm:w-170 space-y-8 mt-22">
             <h2 className="Preset-3 text-Blue-900">Limitations of BMI</h2>
@@ -89,7 +95,9 @@ function App() {
           </div>
 
         </section>
-      </main>
+        </main>
+        */}
+      
     </>
   )
 }
