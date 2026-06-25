@@ -37,7 +37,7 @@ function App() {
           </div>
         </section>
         
-        <section className="max-w-360 relative px-6 py-12 sm:px-8 sm:py-13 lg:px-32 lg:py-24 sm:flex flex-col items-center lg:flex-row">
+        <section className="max-w-360 relative px-6 py-12 sm:px-8 sm:py-13 lg:px-32 lg:py-24 sm:flex flex-col items-center lg:flex-row overflow-hidden">
           <div className="absolute top-0 left-[-50vw] right-[-50vw] lg:right-[5%] h-full bg-linear-to-r from-Gradient-1/5  to-Gradient-2/30 lg:rounded-3xl z-10 " aria-hidden="true" />
           <div className="w-81.75 sm:w-171.5 lg:w-fit flex flex-col lg:flex-row gap-10 lg:gap-8 z-30">
             <TipsCard
