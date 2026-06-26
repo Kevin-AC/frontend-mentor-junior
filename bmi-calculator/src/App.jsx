@@ -8,13 +8,13 @@ function App() {
         {/*hero*/}
         <header className="w-full max-w-360 mx-auto lg:h-184.5 relative px-6 pt-8 sm:px-10 lg:px-36 lg:py-22 font-Inter">
           <div className="w-full flex flex-col items-center lg:items-start gap-8 lg:gap-6">
-            <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-full rounded-b-4xl bg-linear-to-tr from-White to-Gradient-2  z-10" aria-hidden="true" />
+            <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-3/5 sm:h-3/4 lg:h-full rounded-b-4xl bg-linear-to-tr from-White to-Gradient-2  z-10" aria-hidden="true" />
             <img className="w-10 lg:w-16 z-30" src="/images/logo.svg" alt="logo-icon" />
             <article className="flex flex-col gap-8 sm:gap-10 text-center items-center lg:flex-row z-30" >
               
               <div className=" lg:w-141 lg:text-left">
-                <h1 className="Preset-2 text-Blue-900">Body Mass<br/>Index Calculator</h1>
-                <p className="pt-6 Preset-6-Regular text-Grey-500 lg:w-116">Better understand your weight in relation to your height using our body mass index (BM) calculator.
+                <h1 className="preset-2 lg:preset-1 text-Blue-900">Body Mass<br/>Index Calculator</h1>
+                <p className="pt-6 preset-6-Regular text-Grey-500 lg:w-116">Better understand your weight in relation to your height using our body mass index (BM) calculator.
                   While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
                 </p>
               </div>
@@ -31,8 +31,8 @@ function App() {
               <img className="w-full sm:w-108 object-cover sm:-ml-20 lg:m-0" src="/images/image-man-eating.webp" alt="man-eating" />
             </picture>
             <article className="w-82 lg:w-116 space-y-6  sm:text-left">
-              <h2 className="text-3xl lg:text-5xl leading-[1.1] tracking-tighter font-semibold text-Blue-900">What your BMI result means</h2>
-              <p className="Preset-6-Regular text-Grey-500">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
+              <h2 className="preset-3 lg:preset-2 text-Blue-900">What your BMI result means</h2>
+              <p className="preset-6-Regular text-Grey-500">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
             </article>
           </div>
         </section>
@@ -60,8 +60,8 @@ function App() {
        
         <section className="max-w-360 flex flex-col items-stretch sm:grid sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-x-4 lg:gap-y-6 pb-12 lg:px-36 lg:py-25.5">
           <article className="text-center lg:text-left w-81 sm:w-170 lg:w-full sm:col-span-2 lg:col-span-6 space-y-8 mt-22 lg:mt-0">
-            <h2 className="Preset-3 text-Blue-900">Limitations of BMI</h2>
-            <p className="Preset-6-Regular text-Grey-500">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
+            <h2 className="preset-3 lg:preset-2 text-Blue-900">Limitations of BMI</h2>
+            <p className="preset-6-Regular text-Grey-500">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
           </article>
           <div className="w-full sm:max-w-91.5 lg:col-start-8 lg:col-span-5">
             <LimitatiosBmiCard

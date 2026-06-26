@@ -14,48 +14,52 @@
   --color-Gradient-2:#D6E6FE;
 }
 
-.Preset-1 {
-  @apply text-[4rem] leading-[1.1] tracking-[-0.05em] font-semibold;
+@utility preset-1 {
+  @apply text-[64px] leading-[1.1] tracking-[-0.05em] font-semibold;
 }
 
-.Preset-2 {
+@utility preset-2 {
   @apply text-[3rem] leading-[1.1] tracking-[-0.05em] font-semibold;
 }
 
-.Preset-3 {
+@utility preset-3 {
   @apply text-[2rem] leading-[1.1] tracking-[-0.05em] font-semibold;
 }
 
-.Preset-4 {
+@utility preset-3 {
+  @apply text-[2rem] leading-[1.1] tracking-[-0.05em] font-semibold;
+}
+
+@utility preset-4 {
   @apply text-[1.5rem] leading-[1.2] tracking-[-0.05em] font-semibold;
 }
 
-.Preset-5 {
+@utility preset-5 {
   @apply text-[1.25rem] leading-[1.2] tracking-[-0.05em] font-semibold;
 }
 
-.Preset-6 {
+@utility preset-6 {
   @apply text-[1rem] leading-[1.5] tracking-[0] font-semibold;
 }
 
-.Preset-6-Regular{
+@utility preset-6-Regular{
   @apply text-[1rem] leading-[1.5] tracking-[0] font-normal;
 }
 
-.Preset-7 {
+@utility preset-7 {
   @apply text-[0.875rem] leading-[1.5] tracking-[0] font-bold;
 }
 
-.Preset-7-Regular {
+@utility preset-7-Regular {
   @apply text-[0.875rem] leading-[1.5] tracking-[0] font-normal;
 }
-.Check{
+@utility check{
   @apply w-8 h-8 relative appearance-none border-2 border-slate-300 rounded-full checked:h-4 checked:w-4 checked:bg-Blue-500 checked:border-Blue-500 transition-all duration-200 ease-in-out cursor-pointer;
   
 }
-.InputText{
-  @apply  h-[77px] mt-2 p-6 outline-none focus:border-Blue-500 focus:border-2 border border-Grey-500 rounded-2xl text-Blue-900 placeholder:text-Grey-500;
+@utility inputText{
+  @apply  h-[77px] mt-2 p-6 outline-none focus:cursor-pointer focus:border-Blue-500 focus:border-2 border border-Grey-500 rounded-2xl text-Blue-900 placeholder:text-Grey-500;
 }
-.Shadow{
+@utility sshadow{
   @apply shadow-[16px_32px_56px_0px_rgba(143,174,207,0.25)]
 }

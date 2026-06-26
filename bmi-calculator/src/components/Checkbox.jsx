@@ -9,11 +9,11 @@ export default function Checkbox({name,checked,onChange}){
                     id="Unidad"
                     checked={checked}
                     onChange={onChange}
-                    className="Check z-10 peer"
+                    className="check z-10 peer"
                 />
                 <span className="absolute inset-0 rounded-full peer-checked:border-none peer-checked:bg-Blue-300 border-Grey-500 pointer-events-none"></span>
             </label>
-            <span className="Preset-6 ml-3 text-slate-700 select-none">{name}</span>
+            <span className="preset-6 ml-3 text-slate-700 select-none">{name}</span>
         </div>
     )
 }

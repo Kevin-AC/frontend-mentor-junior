@@ -77,7 +77,7 @@ export default function Card(){
 
     return(
         <article className="bg-White w-full text-left p-6 sm:p-8 rounded-2xl shadow-lg space-y-6 ">
-            <h3 className="Preset-4">Enter your details below</h3>
+            <h3 className="preset-4">Enter your details below</h3>
             <div className="flex gap-6 ">
                 <Checkbox name={"Metric"} checked={system === "metric"}
                     onChange={() => setSystem("metric")} />
