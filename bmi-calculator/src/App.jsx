@@ -58,34 +58,40 @@ function App() {
           </div>
         </section>
        
-        <section className="flex flex-col items-center gap-16 pb-12 ">
-          <article className="text-center w-81 sm:w-170 space-y-8 mt-22">
+        <section className="max-w-360 flex flex-col items-stretch sm:grid sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-x-4 lg:gap-y-6 pb-12 lg:px-36 lg:py-25.5">
+          <article className="text-center lg:text-left w-81 sm:w-170 lg:w-full sm:col-span-2 lg:col-span-6 space-y-8 mt-22 lg:mt-0">
             <h2 className="Preset-3 text-Blue-900">Limitations of BMI</h2>
             <p className="Preset-6-Regular text-Grey-500">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
           </article>
-          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-6 sm:gap-8 sm:max-w-180">
+          <div className="w-full sm:max-w-91.5 lg:col-start-8 lg:col-span-5">
             <LimitatiosBmiCard
               title={"Gender"}
               imgUrl={"/images/icon-gender.svg"}
               text={"The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI."}
             />
+          </div>
+          <div className="w-full sm:max-w-91.5 lg:col-start-5 lg:col-span-4">
             <LimitatiosBmiCard
               title={"Age"}
               imgUrl={"/images/icon-age.svg"}
               text={"In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content."}
             />
-
+          </div>
+          <div className="w-full sm:max-w-91.5 lg:col-start-9 lg:col-span-4">
             <LimitatiosBmiCard
               title={"Muscle"}
               imgUrl={"/images/icon-muscle.svg"}
               text={"BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat."}
             />
-
+          </div>
+          <div className="w-full sm:max-w-91.5 lg:col-start-3 lg:col-span-4">
             <LimitatiosBmiCard
               title={"Pregnancy"}
               imgUrl={"/images/icon-pregnancy.svg"}
               text={"Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child."}
             />
+          </div>
+          <div className="w-full sm:max-w-91.5 sm:col-span-2 sm:justify-self-center lg:col-start-7 lg:col-span-5">        
             <LimitatiosBmiCard
               title={"Race"}
               imgUrl={"/images/icon-race.svg"}
