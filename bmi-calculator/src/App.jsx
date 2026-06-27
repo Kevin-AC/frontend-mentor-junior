@@ -8,7 +8,7 @@ function App() {
         {/*hero*/}
         <header className="w-full max-w-360 mx-auto lg:h-184.5 relative px-6 pt-8 sm:px-10 lg:px-36 lg:py-22 font-Inter">
           <div className="w-full flex flex-col items-center lg:items-start gap-8 lg:gap-6">
-            <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-3/5 sm:h-3/4 lg:h-[93%] rounded-b-4xl bg-linear-to-tr from-White to-Gradient-2  z-10" aria-hidden="true" />
+          <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-3/5 sm:h-3/4 lg:h-[93%] rounded-b-4xl gradient1  z-10" aria-hidden="true" />
             <img className="w-10 lg:w-16 z-30" src="/images/logo.svg" alt="logo-icon" />
             <article className="flex flex-col gap-8 sm:gap-10 text-center items-center lg:flex-row z-30" >
               
