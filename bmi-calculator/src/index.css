@@ -66,3 +66,6 @@
 @utility gradient1{
   @apply bg-linear-to-r from-White from-50%  via-Gradient-1/90 via-70% to-Gradient-2/80 to-100%;
 }
+@utility gradient-2{
+  @apply bg-linear-to-r from-White from-50% via-Gradient-1/20 via-70% to-Gradient-2/20 to-100%
+}
