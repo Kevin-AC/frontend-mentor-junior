@@ -24,13 +24,14 @@ function App() {
             </article>
           </div>
         </header>
-      <main className="w-full flex flex-col items-center gap-16 mt-16">
+      <main className="w-full flex flex-col items-center gap-16 mt-32">
         <section className="w-full lg:px-36 max-w-360">
-          <div className="w-full flex flex-col  sm:flex-row items-center gap-8 sm:gap-2 lg:gap-22">
+          <div className="w-full flex flex-col  sm:flex-row items-center gap-8 sm:gap-2 lg:gap-22 lg:relative">
+            <img className="hidden lg:inline lg:absolute -top-12 right-16 " src="/images/pattern-curved-line-left.svg" alt="" />
             <picture className="w-auto">
-              <img className="w-full sm:w-108 object-cover sm:-ml-20 lg:m-0" src="/images/image-man-eating.webp" alt="man-eating" />
+              <img className="w-full sm:w-108 lg:w-141 object-cover sm:-ml-20 lg:m-0" src="/images/image-man-eating.webp" alt="man-eating" />
             </picture>
-            <article className="w-82 lg:w-116 space-y-6  sm:text-left">
+            <article className="w-82 lg:w-116 space-y-6 sm:text-left lg:mt-32">
               <h2 className="preset-3 lg:preset-2 text-Blue-900">What your BMI result means</h2>
               <p className="preset-6-Regular text-Grey-500">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
             </article>
@@ -58,7 +59,8 @@ function App() {
           </div>
         </section>
        
-        <section className="max-w-360 flex flex-col items-stretch sm:grid sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-x-4 lg:gap-y-6 pb-12 lg:px-36 lg:py-25.5">
+        <section className="max-w-360 flex flex-col items-stretch sm:grid sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-x-4 lg:gap-y-6 pb-12 lg:px-36 lg:py-25.5 relative">
+          <img className="absolute top-2/5 left-2/9" src="images/pattern-curved-line-right.svg" alt="" />
           <article className="text-center lg:text-left w-81 sm:w-170 lg:w-full sm:col-span-2 lg:col-span-6 space-y-8 mt-22 lg:mt-0">
             <h2 className="preset-3 lg:preset-2 text-Blue-900">Limitations of BMI</h2>
             <p className="preset-6-Regular text-Grey-500">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
