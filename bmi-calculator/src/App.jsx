@@ -8,7 +8,7 @@ function App() {
         {/*hero*/}
         <header className="w-full max-w-360 mx-auto lg:h-184.5 relative px-6 pt-8 sm:px-10 lg:px-36 lg:py-22 font-Inter">
           <div className="w-full flex flex-col items-center lg:items-start gap-8 lg:gap-6">
-            <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-3/5 sm:h-3/4 lg:h-full rounded-b-4xl bg-linear-to-tr from-White to-Gradient-2  z-10" aria-hidden="true" />
+            <div className="absolute top-0 left-[-50vw] right-0 lg:right-[30%] h-3/5 sm:h-3/4 lg:h-[93%] rounded-b-4xl bg-linear-to-tr from-White to-Gradient-2  z-10" aria-hidden="true" />
             <img className="w-10 lg:w-16 z-30" src="/images/logo.svg" alt="logo-icon" />
             <article className="flex flex-col gap-8 sm:gap-10 text-center items-center lg:flex-row z-30" >
               
@@ -60,7 +60,7 @@ function App() {
         </section>
        
         <section className="max-w-360 flex flex-col items-stretch sm:grid sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-x-4 lg:gap-y-6 pb-12 lg:px-36 lg:py-25.5 relative">
-          <img className="absolute top-2/5 left-2/9" src="images/pattern-curved-line-right.svg" alt="" />
+          <img className="hidden lg:inline lg:absolute top-2/5 left-2/9" src="images/pattern-curved-line-right.svg" alt="" />
           <article className="text-center lg:text-left w-81 sm:w-170 lg:w-full sm:col-span-2 lg:col-span-6 space-y-8 mt-22 lg:mt-0">
             <h2 className="preset-3 lg:preset-2 text-Blue-900">Limitations of BMI</h2>
             <p className="preset-6-Regular text-Grey-500">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
