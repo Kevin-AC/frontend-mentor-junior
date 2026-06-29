@@ -40,7 +40,7 @@ function App() {
         
         <section className="max-w-360 relative px-6 py-12 sm:px-8 sm:py-13 lg:px-32 lg:py-24 sm:flex flex-col items-center lg:flex-row">
           <div className="absolute top-0 left-[-50vw] lg:right-[5%] right-[-5%] h-full gradient-2 lg:rounded-3xl z-10" aria-hidden="true" />
-          <div className="w-81.75 sm:w-171.5 lg:w-fit flex flex-col lg:flex-row gap-10 lg:gap-8 z-30">
+          <div className="relative w-81.75 sm:w-171.5 lg:w-fit flex flex-col lg:flex-row gap-10 lg:gap-8 z-30">
             <TipsCard
               title={"Healthy eating"}
               text={"Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood."}
